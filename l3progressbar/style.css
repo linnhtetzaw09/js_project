@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  display: grid;
+  place-items: center;
+}
+
+.container{
+  width: 600px;
+}
+
+.progress{
+  width: inherit;
+  height: 20px;
+  background-color: #ddd;
+
+  margin-bottom: 20px;
+}
+
+.progress .progress-bar{
+  width: 0;
+  height: inherit;
+  background-color: green;
+
+  position: relative;
+}
+
+.progress .progress-bar::before{
+  content: attr(data-increase);
+  color: #fff;
+
+  position: absolute;
+  top: 50%;
+  right: 20px;
+
+  transform: translateY(-50%);
+}

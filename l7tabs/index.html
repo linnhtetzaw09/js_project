@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tabs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" media="all" />
+  </head>
+  <body>
+    
+ 
+    <div class="container">
+    
+        <h2>Tabs</h2>
+
+        <ul class="nav">
+          <li class="nav-item">
+            <button type="button" id="autoclick" class="tablinks active" onclick="gettab(event,'home')">Home</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="tablinks" onclick="gettab(event,'profile')">Profile</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="tablinks" onclick="gettab(event,'contact')">Contact</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="tablinks" onclick="gettab(event,'settings')">Settings</button>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+
+          <div id="home" class="tab-panel">
+            <span class="btn-close">&times;</span>
+            <h3>This is Home information</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aut aspernatur beatae corrupti necessitatibus rem vitae tempora doloribus sequi aliquam sunt accusamus, soluta fugiat id iste ducimus voluptatibus perferendis minus!</p>
+          </div>
+        
+          <div id="profile" class="tab-panel">
+            <span class="btn-close">&times;</span>
+            <h3>This is Profile information</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, quibusdam dolores. Impedit nesciunt ut possimus labore aspernatur, reiciendis veritatis aperiam, beatae cumque cupiditate in accusamus porro tempora eaque soluta sint.</p>
+          </div>
+        
+          <div id="contact" class="tab-panel">
+            <span class="btn-close">&times;</span>
+            <h3>This is Contact information</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt adipisci ducimus consequuntur culpa accusamus, impedit voluptatem nihil corporis nulla eveniet officia amet iure expedita eum ea, est quisquam facere!</p>
+          </div>
+        
+          <div id="settings" class="tab-panel">
+            <span class="btn-close">&times;</span>
+            <h3>This is Settings information</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem praesentium ullam soluta amet aut ad odio, eaque quod commodi, ea voluptate. Alias autem similique error velit perferendis ipsum optio! Dignissimos.</p>
+          </div>
+
+        </div>
+
+    </div>
+    
+      
+    <script src="./app.js" type="text/javascript"></script>
+
+  </body>
+</html>
