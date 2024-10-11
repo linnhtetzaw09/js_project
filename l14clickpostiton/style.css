@@ -1,0 +1,108 @@
+
+:root{
+  --small-color:#f8f8f8;
+  --medium-color:#f4f4f4;
+  --large-color:#f1f1f1;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #666;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.container h3{
+  color: #fff;
+  text-align: center;
+}
+
+.map-container{
+  width: 1200px;
+  height: 600px;
+  background-image: url(./map.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  border: 1px solid #999;
+
+  position: relative;
+}
+
+.map-container .circle{
+  width: 30px;
+  height: 30px;
+  background-color: var(--small-color);
+  border-radius: 50%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%,-50%) scale(0);
+
+  animation: small 2.5s infinite;
+}
+
+.map-container .circle::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: var(--medium-color);
+  border-radius: 50%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%,-50%) scale(0);
+
+  animation: medium 2.5s infinite;
+
+}
+
+.map-container .circle::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: var(--large-color);
+  border-radius: 50%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%,-50%) scale(0);
+
+  animation: large 2.5s infinite;
+
+}
+
+
+@keyframes small{
+  to{
+    transform: translate(-50%,-50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes medium{
+  to{
+    transform: translate(-50%,-50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes large{
+  to{
+    transform: translate(-50%,-50%) scale(1);
+    opacity: 1;
+  }
+}
